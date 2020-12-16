@@ -1,4 +1,4 @@
-dir \/s/b | find /I"password"
+dir \/s/b | find /"password"
 dir \/b /s "*.bat"
 dir \/b /s "*.cmd"
 dir \/b /s "*.vbs"
