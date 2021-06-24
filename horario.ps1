@@ -5,7 +5,7 @@
 
  <# Getting connection#>
 $connection = New-Object -TypeName System.Data.SQLite.SQLiteConnection
-$connection.ConnectionString = "Data Source=C:\Users\rogge\Desktop\projects\Scheldule\db.db"
+$connection.ConnectionString = "Data Source={put here you db path}"
 $connection.Open()
 
 function CreateTables() {
